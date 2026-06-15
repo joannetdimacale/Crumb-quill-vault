@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crumb & Quill Vault</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🍪 Crumb & Quill Vault</h1>
+
+        <p class="subtitle">
+            Recipe Library • Yield Calculator • Costing
+        </p>
+
+        <div class="card">
+
+            <h2>Recipes</h2>
+
+            <select id="recipeSelect">
+                <option>Select a recipe</option>
+                <option>Biscoff Affair</option>
+                <option>Strawberry Matcha Cloud</option>
+                <option>Cookie Dough Cinnamon Roll</option>
+            </select>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Yield Calculator</h2>
+
+            <label>Desired Quantity</label>
+
+            <input
+                type="number"
+                id="desiredYield"
+                placeholder="Example: 40"
+            >
+
+            <button id="calculateBtn">
+                Calculate
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Ingredients</h2>
+
+            <div id="ingredientsOutput">
+
+                Select a recipe first.
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="recipe.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
