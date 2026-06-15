@@ -1,1 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f3ee;
+    color: #3d2b1f;
+    margin: 0;
+    padding: 20px;
+}
 
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #6b3f2b;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #7a6a5d;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+select,
+input,
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button {
+    background: #8b5e3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#ingredientsOutput {
+    margin-top: 15px;
+    line-height: 1.8;
+}
