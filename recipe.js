@@ -545,4 +545,5 @@ window.recipes = {
     "For best texture, fill muffin liners 70–80% full.",
     "Bake until golden and a toothpick comes out with a few moist crumbs."
   ]
+}
 };
