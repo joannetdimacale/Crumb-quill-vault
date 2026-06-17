@@ -442,7 +442,7 @@ window.recipes = {
     "Adjust strawberry flavor to taste.",
     "Frost after rolls have slightly cooled."
   ]
-}, "Cookie Dough Cinnamon Roll": {
+} , "Cookie Dough Cinnamon Roll": {
   originalYield: 12,
   yieldUnit: "rolls",
   portion: "Large rolls",
@@ -484,7 +484,7 @@ window.recipes = {
     "Use heat-treated flour for edible cookie dough.",
     "Finish with chocolate chips."
   ]
-}, "Banana Walnut Crumb Muffin": {
+} , "Banana Walnut Crumb Muffin": {
   originalYield: 8,
   yieldUnit: "muffins",
   portion: "Large bakery-style muffins",
