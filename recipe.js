@@ -362,5 +362,187 @@ window.recipes = {
     "A premium stuffed cookie built around Biscoff flavor: caramelized, spiced, rich, and balanced with flaky salt. Designed to feel indulgent without becoming too sweet."
 
   ]
-}
+} , "Classic Cinnamon Roll": {
+  originalYield: 12,
+  yieldUnit: "rolls",
+  portion: "Large rolls",
+
+  ingredients: [
+
+    { name: "🥛 DOUGH" },
+
+    { name: "Milk, warm", amount: 240, unit: "g" },
+    { name: "Instant yeast", amount: 6.67, unit: "g" },
+    { name: "White sugar", amount: 86.67, unit: "g" },
+    { name: "Unsalted butter, melted", amount: 100, unit: "g" },
+    { name: "Whole egg", amount: 1.33, unit: "pc" },
+    { name: "Egg yolk", amount: 1.33, unit: "pc" },
+    { name: "Salt", amount: 5.33, unit: "g" },
+    { name: "All-purpose flour", amount: 373.33, unit: "g" },
+    { name: "Bread flour", amount: 160, unit: "g" },
+
+    { name: "🍯 FILLING" },
+
+    { name: "Unsalted butter, soft", amount: 100, unit: "g" },
+    { name: "Brown sugar", amount: 200, unit: "g" },
+    { name: "Cinnamon", amount: 21.33, unit: "g" }
+
+  ],
+
+  notes: [
+    "Original yield: 12 large rolls.",
+    "Use warm milk, not hot.",
+    "Mix until dough passes windowpane test.",
+    "Let dough double in size before rolling.",
+    "Spread filling evenly before rolling.",
+    "Proof until puffy before baking."
+  ]
+} , "Strawberry Cinnamon Roll": {
+  originalYield: 12,
+  yieldUnit: "rolls",
+  portion: "Large rolls",
+
+  ingredients: [
+
+    { name: "🥛 DOUGH" },
+
+    { name: "Milk, warm", amount: 240, unit: "g" },
+    { name: "Instant yeast", amount: 6.67, unit: "g" },
+    { name: "White sugar", amount: 86.67, unit: "g" },
+    { name: "Unsalted butter, melted", amount: 100, unit: "g" },
+    { name: "Whole egg", amount: 1.33, unit: "pc" },
+    { name: "Egg yolk", amount: 1.33, unit: "pc" },
+    { name: "Salt", amount: 5.33, unit: "g" },
+    { name: "All-purpose flour", amount: 373.33, unit: "g" },
+    { name: "Bread flour", amount: 160, unit: "g" },
+
+    { name: "🍓 FILLING" },
+
+    { name: "Unsalted butter, soft", amount: 100, unit: "g" },
+    { name: "Brown sugar", amount: 200, unit: "g" },
+    { name: "Cinnamon", amount: 21.33, unit: "g" },
+
+    { name: "🍓 STRAWBERRY COMPONENT" },
+
+    { name: "Strawberry preserve/jam", amount: 180, unit: "g" },
+
+    { name: "🧁 FROSTING" },
+
+    { name: "Cream cheese", amount: 225, unit: "g" },
+    { name: "Unsalted butter", amount: 60, unit: "g" },
+    { name: "Powdered sugar", amount: 120, unit: "g" },
+    { name: "Strawberry extract", amount: 5, unit: "g" }
+
+  ],
+
+  notes: [
+    "Original yield: 12 large rolls.",
+    "Spread strawberry preserve after cinnamon filling.",
+    "Use strawberry extract if strawberry powder is unavailable.",
+    "Adjust strawberry flavor to taste.",
+    "Frost after rolls have slightly cooled."
+  ]
+}, "Cookie Dough Cinnamon Roll": {
+  originalYield: 12,
+  yieldUnit: "rolls",
+  portion: "Large rolls",
+
+  ingredients: [
+
+    { name: "🥛 DOUGH" },
+
+    { name: "Milk, warm", amount: 240, unit: "g" },
+    { name: "Instant yeast", amount: 6.67, unit: "g" },
+    { name: "White sugar", amount: 86.67, unit: "g" },
+    { name: "Unsalted butter, melted", amount: 100, unit: "g" },
+    { name: "Whole egg", amount: 1.33, unit: "pc" },
+    { name: "Egg yolk", amount: 1.33, unit: "pc" },
+    { name: "Salt", amount: 5.33, unit: "g" },
+    { name: "All-purpose flour", amount: 373.33, unit: "g" },
+    { name: "Bread flour", amount: 160, unit: "g" },
+
+    { name: "🍯 FILLING" },
+
+    { name: "Unsalted butter, soft", amount: 100, unit: "g" },
+    { name: "Brown sugar", amount: 200, unit: "g" },
+    { name: "Cinnamon", amount: 21.33, unit: "g" },
+
+    { name: "🍪 COOKIE DOUGH TOPPING" },
+
+    { name: "Butter", amount: 113, unit: "g" },
+    { name: "Brown sugar", amount: 110, unit: "g" },
+    { name: "White sugar", amount: 35, unit: "g" },
+    { name: "Vanilla extract", amount: 5, unit: "g" },
+    { name: "All-purpose flour", amount: 90, unit: "g" },
+    { name: "Chocolate chips", amount: 80, unit: "g" }
+
+  ],
+
+  notes: [
+    "Original yield: 12 large rolls.",
+    "Top frosted rolls with edible cookie dough.",
+    "Use heat-treated flour for edible cookie dough.",
+    "Finish with chocolate chips."
+  ]
+}, "Banana Walnut Crumb Muffin": {
+  originalYield: 8,
+  yieldUnit: "muffins",
+  portion: "Large bakery-style muffins",
+
+  ingredients: [
+
+    { name: "🍌 MUFFIN BATTER" },
+
+    { name: "All-purpose flour", amount: 95, unit: "g" },
+    { name: "Cake flour", amount: 32, unit: "g" },
+    { name: "Baking powder", amount: 2.4, unit: "g" },
+    { name: "Baking soda", amount: 1, unit: "g" },
+    { name: "Salt", amount: 1.2, unit: "g" },
+
+    { name: "Unsalted butter", amount: 68, unit: "g" },
+    { name: "Dark brown sugar", amount: 104, unit: "g" },
+    { name: "White sugar", amount: 17, unit: "g" },
+    { name: "Egg", amount: 1.2, unit: "pc" },
+    { name: "Vanilla extract", amount: 2.4, unit: "g" },
+
+    { name: "Mashed ripe bananas", amount: 70, unit: "g" },
+    { name: "Sour cream", amount: 48, unit: "g" },
+    { name: "Whole milk", amount: 36, unit: "g" },
+
+    { name: "Chopped walnuts", amount: 80, unit: "g" },
+
+    { name: "🍯 CARAMELIZED BANANA" },
+
+    { name: "Bananas", amount: 150, unit: "g" },
+    { name: "Butter", amount: 15, unit: "g" },
+    { name: "Brown sugar", amount: 15, unit: "g" },
+    { name: "Salt", amount: 1, unit: "pinch" },
+
+    { name: "🤎 CRUMB TOPPING" },
+
+    { name: "All-purpose flour", amount: 60, unit: "g" },
+    { name: "Brown sugar", amount: 50, unit: "g" },
+    { name: "Cold butter", amount: 40, unit: "g" },
+    { name: "Cinnamon", amount: 1, unit: "g" },
+    { name: "Salt", amount: 1, unit: "pinch" },
+
+    { name: "🧀 OPTIONAL CREAM CHEESE TOPPING" },
+
+    { name: "Cream cheese", amount: 115, unit: "g" },
+    { name: "Powdered sugar", amount: 30, unit: "g" },
+    { name: "Vanilla extract", amount: 5, unit: "g" },
+    { name: "Milk", amount: 15, unit: "g" }
+
+  ],
+
+  notes: [
+    "Original yield: 8 large muffins.",
+    "Cook caramelized banana until thick and jam-like.",
+    "Allow caramelized banana to cool before mixing into batter.",
+    "Fold walnuts in last.",
+    "Top generously with crumb topping before baking.",
+    "Cream cheese topping is optional.",
+    "For best texture, fill muffin liners 70–80% full.",
+    "Bake until golden and a toothpick comes out with a few moist crumbs."
+  ]
 };
