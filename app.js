@@ -5,23 +5,22 @@ const recipeInfo = document.getElementById("recipeInfo");
 const ingredientsOutput = document.getElementById("ingredientsOutput");
 const notesOutput = document.getElementById("notesOutput");
 
-function loadRecipeOptions() {
-  if (typeof recipes === "undefined") {
-    recipeInfo.innerHTML = "Recipe data not found. Please check recipe.js for errors.";
-    ingredientsOutput.innerHTML = "No recipe data loaded.";
-    notesOutput.innerHTML = "No notes loaded.";
-    return;
-  }
+// Clear dropdown first
+recipeSelect.innerHTML = "";
 
-  recipeSelect.innerHTML = `<option value="">Select a recipe</option>`;
+// Add default option
+const defaultOption = document.createElement("option");
+defaultOption.value = "";
+defaultOption.textContent = "Select a recipe";
+recipeSelect.appendChild(defaultOption);
 
-  Object.keys(recipes).forEach(recipeName => {
-    const option = document.createElement("option");
-    option.value = recipeName;
-    option.textContent = recipeName;
-    recipeSelect.appendChild(option);
-  });
-}
+// Add recipes automatically from recipe.js
+Object.keys(recipes).forEach(recipeName => {
+  const option = document.createElement("option");
+  option.value = recipeName;
+  option.textContent = recipeName;
+  recipeSelect.appendChild(option);
+});
 
 function showRecipe() {
   const recipeName = recipeSelect.value;
@@ -31,6 +30,7 @@ function showRecipe() {
     recipeInfo.innerHTML = "Select a recipe first.";
     ingredientsOutput.innerHTML = "Select a recipe first.";
     notesOutput.innerHTML = "No notes yet.";
+    desiredYield.value = "";
     return;
   }
 
@@ -53,19 +53,23 @@ function calculateRecipe() {
   const recipeName = recipeSelect.value;
   const recipe = recipes[recipeName];
 
-  if (!recipe) return;
+  if (!recipe) {
+    ingredientsOutput.innerHTML = "Select a recipe first.";
+    return;
+  }
 
   const targetYield = Number(desiredYield.value);
 
   if (!targetYield || targetYield <= 0) {
-    ingredientsOutput.innerHTML = "Enter desired quantity.";
+    ingredientsOutput.innerHTML = "Enter a valid desired quantity.";
     return;
   }
 
   const multiplier = targetYield / recipe.originalYield;
 
   ingredientsOutput.innerHTML = recipe.ingredients.map(item => {
-    if (item.amount === undefined) {
+    // This handles section labels like WET INGREDIENTS, DRY INGREDIENTS, MIX-INS
+    if (item.amount === undefined || item.unit === undefined) {
       return `<br><strong>${item.name}</strong>`;
     }
 
@@ -79,5 +83,3 @@ function calculateRecipe() {
 recipeSelect.addEventListener("change", showRecipe);
 calculateBtn.addEventListener("click", calculateRecipe);
 desiredYield.addEventListener("input", calculateRecipe);
-
-loadRecipeOptions();
